@@ -12,4 +12,8 @@ export class ImgLoaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  add() {
+    var r = new FileReader();
+    console.log("LOADED");
+  }
 }
