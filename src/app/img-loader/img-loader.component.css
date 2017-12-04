@@ -1,0 +1,12 @@
+.btn-change.hidden{
+    display: none;
+}
+.btn-change{
+    display: inline-block;
+}
+.input-wrapper.hidden{
+    display: none;
+}
+.input-wrapper{
+    display: inline-block;
+}

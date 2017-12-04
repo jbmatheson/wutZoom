@@ -1,6 +1,10 @@
-<p>
-  img-loader works!
-</p>
-
-<input type="file" id="file" name="file"/>
-<button (click)="add()">Add</button>
+<div class="img-loader">
+    <div ngClass="{'input-wrapper':true}">
+        <input type="url" id="file" name="file" #myFile/>
+        <button (click)="add()">Insert Image</button>
+    </div>
+    <button class="btn-change" [ngClass]="{'btn-change':true, 'hidden':true}" (click)="change()">Change Image</button>
+</div>
+<button (click)="snip($event)">
+    <img [src]='imgURL'>
+</button>
