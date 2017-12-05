@@ -25,7 +25,7 @@ export class ImgLoaderComponent implements AfterViewInit {
     var x = $e.clientX;
     var y = $e.clientY;
     console.log("Xpos " + x + " | Ypos: " + y);
-    var myImage = new Image(200, 200);
+    var myImage = new Image(400, 400);
     myImage.src = this.imgURL;
     document.body.appendChild(myImage);
   }

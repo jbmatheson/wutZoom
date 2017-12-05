@@ -3,8 +3,10 @@
         <input type="url" id="file" name="file" #myFile/>
         <button (click)="add()">Insert Image</button>
     </div>
-    <button class="btn-change" [ngClass]="{'btn-change':true, 'hidden':true}" (click)="change()">Change Image</button>
+    <div>
+        <button [ngClass]="{'btn-change':true, 'hidden':true}" (click)="change()">Change Image</button>
+    </div>
 </div>
-<button (click)="snip($event)">
-    <img [src]='imgURL'>
+<button id="btn-snapshot" (click)="snip($event)">
+    <img [ngClass]="{'img-snapshot':true}" [src]='imgURL'>
 </button>

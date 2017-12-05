@@ -4,6 +4,9 @@
 .btn-change{
     display: inline-block;
 }
+.img-snapshot{
+    max-width: 400px;
+}
 .input-wrapper.hidden{
     display: none;
 }
