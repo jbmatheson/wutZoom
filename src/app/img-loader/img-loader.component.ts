@@ -24,17 +24,19 @@ export class ImgLoaderComponent implements AfterViewInit {
   snip(evt){  
     var crop_canvas,
       myImage = document.getElementById("img-01"),
-      width = 200,
-      height = 200;
+      height = 400,
+      width = 400;
+    
+    console.log(myImage);
 
     crop_canvas = document.createElement('canvas');
     crop_canvas.width = width;
     crop_canvas.height = height;
 
     //myImage.src = this.imgURL;
-    crop_canvas.getContext('2d').drawImage(myImage, evt.offsetX, evt.offsetY, 150, 150, 0, 0, 150, 150);
+    crop_canvas.getContext('2d').drawImage(myImage, evt.offsetX, evt.offsetY, 400, 400, 0, 0, 400, 400);
 
     document.body.appendChild(crop_canvas);
-    console.log("Xpos: " + evt.offsetX + " | Ypos: " + evt.offsetY);
+    console.log(evt.offsetX + " | | " + evt.offsetY);
   }
 }
